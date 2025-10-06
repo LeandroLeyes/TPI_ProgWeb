@@ -1,0 +1,22 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Carpetas de caché
+.cache/
+dist/
+node_modules/
+temp/
+tmp/
+
+# Archivos del editor
+.vscode/
+.idea/
+*.log
+
+# Archivos del navegador o build
+*.map
+
+# Archivos personales
+*.env
+*.bak
