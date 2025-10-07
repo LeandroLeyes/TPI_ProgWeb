@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 1rem;
+}
+
+#panel {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: top;
+}
