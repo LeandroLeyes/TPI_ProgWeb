@@ -1,0 +1,11 @@
+:root {
+    /* Colores */
+    --color-principal: #EC136D;
+    --color-secundario: #6D0932;
+    --color-fondo: #14181c;
+    --color-texto: #e5e9f2;
+
+    /* Tipografías */
+    --fuente-principal: 'Inter', sans-serif;
+    --fuente-secundaria: 'Roboto', sans-serif;
+}
