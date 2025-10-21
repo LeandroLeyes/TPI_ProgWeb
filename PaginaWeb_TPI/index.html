@@ -3,60 +3,119 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/estilo.css">
-    <title>Main *NombreDeLaPag*</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>FilmsReviews - Inicio</title>
 </head>
 
 <body>
+
     <header>
-
-        <nav>
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Registrar</a></li>
-                <li><a href="">Peliculas & Series</a></li>
-                <li><a href="">Peliculas Malas</a></li>
-            </ul>
-        </nav>
-
-        <form action="">
-            <label for="buscar">Buscar</label><input type="text" name="buscar" id="buscar">
-        </form>
+        <div class="contenedor">
+            <p class="logo">Films<span>Reviews</span></p>
+            <nav>
+                <a href="#portada">Inicio</a>
+                <a href="registro.html">Registrate</a>
+                <a href="#info">Info</a>
+                <a href="#reviews">Los Más Populares</a>
+                <a href="peliculas-series.html">Peliculas & Series</a>
+            </nav>
+        </div>
     </header>
-    <div class="contenedor">
-        <div class="logo">
-            <h2>Sigue las películas que has visto.
-                Guarda las que quieras ver.
-                Cuéntales a tus amigos qué es lo mejor.</h2>
+
+    <section id="portada">
+        <div class="contenedor">
+            <h1>Sigue las películas que has visto.
+                <br>Guarda las que quieras ver.
+                <br>Cuéntales a tus amigos qué es lo mejor.
+            </h1>
+            <form action="" novalidate>
+                <button>Empieza Ahora!</button>
+            </form>
         </div>
+    </section>
 
+    <section id="info">
+        <div class="contenedor">
+            <h3>Films<span>Reviews </span> te permite...</h3>
+            <div class="cuadro">
 
-        <div id="principal">
-            <h2>Peliculas Populares</h2>
-            <div class="carrousel">
-                <!--js carrousel -->
+                <div class="carta" id="par1">
+                    <p>Lleva un registro de cada película que hayas visto (o empieza desde el día en que te uniste)</p>
+                </div>
+
+                <div class="carta" id="par2">
+                    <p>Muestra tu cariño por tus películas, listas y reseñas favoritas con un «me gusta».</p>
+                </div>
+
+                <div class="carta" id="par3">
+                    <p>Escribe y comparte reseñas, y sigue a tus amigos y otros miembros para leer las suyas.</p>
+                </div>
+
+                <div class="carta" id="par1">
+                    <p>Califica cada película en una escala de cinco estrellas (con mitades) para registrar y compartir
+                        tu reacción.</p>
+                </div>
+
+                <div class="carta" id="par2">
+                    <p>Lleva un diario de las películas que ves (y actualiza a la versión pro para obtener estadísticas
+                        completas)</p>
+                </div>
+
+                <div class="carta" id="par3">
+                    <p>Compila y comparte listas de películas sobre cualquier tema y mantén una lista de películas para
+                        ver.</p>
+                </div>
+
             </div>
-        </div>
 
-        <div class="cuadro">
-            <div class="panel1">
-                <p>sirve para reviewss</p>
-                <p>compartir peli..</p>
-                <p>taraeata...</p>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div class="contenedor">
+            <h3>Reseñas populares de la semana</h3>
+            <div class="reviews-populares">
+
+                <div class="carta-review">
+                    <div class="icono-pelicula">Bastardos sin Gloria</div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia quas molestias eveniet voluptatum
+                        nobis fuga, eaque natus earum cum, provident illum tenetur nesciunt blanditiis quam assumenda
+                        saepe nam quasi omnis!</p>
+                </div>
+
+                <div class="carta-review">
+                    <div class="icono-pelicula">El Señor de los Anillos: La Comunidad del Anillo</div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa dolorem minus soluta itaque odio
+                        sapiente excepturi, eveniet praesentium delectus assumenda rem possimus officia placeat nemo
+                        quam aut doloremque fugit iusto.</p>
+                </div>
+
+                <div class="carta-review">
+                    <div class="icono-pelicula">Interestelar</div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus omnis natus aliquid ducimus
+                        quia eos quasi itaque illum? At hic placeat mollitia laborum magnam corrupti quasi officiis
+                        rerum praesentium libero!</p>
+                </div>
+
+                <div class="carta-review">
+                    <div class="icono-pelicula">Fallout</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ad? Consectetur, incidunt neque.
+                        Voluptates, aliquam quas modi ut ea architecto consequatur eligendi in ipsam quidem sapiente!
+                        Minima quas incidunt minus.</p>
+                </div>
+
             </div>
-            <div class="panel2">
-                <p>4</p>
-                <p>5</p>
-                <p>6</p>
-            </div>
-        </div>
 
-        <h2>Reseñas mas Populares</h2>
-        <div class="reseñas">
-            <!--contenido-->
         </div>
+    </section>
 
-    </div>
+    <footer>
+        <div class="contenedor">
+            <p>&copy; FilmsReviews 2025</p>
+        </div>
+    </footer>
 </body>
+<script></script>
 
 </html>

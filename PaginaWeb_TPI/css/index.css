@@ -1,7 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: var(--fuente-principal);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+h1 {
+    font-size: 34px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+header .logo {
+    margin: 0;
+    padding: 20px 30px;
+    font-weight: bold;
+    color: var(--color-texto);
+    font-size: 25px;
+}
+
+header .logo span {
+    margin: 0;
+    padding-right: 30px;
+    padding-left: 0px;
+    font-weight: bold;
+    color: var(--color-principal);
+    font-size: 25px;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom, #14181c 20%, transparent 100%);
+}
+
+header nav {
+    margin: 0;
+    padding: 20px 30px;
+    display: flex;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-texto);
+}
+
+header a:hover {
+    color: var(--color-principal);
+}
+
+.contenedor {
+    max-width: 1400px;
+    margin: auto;
+}
+
+#portada .contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: end;
+    flex-direction: column;
+    height: 100vh;
+    background-image:
+        linear-gradient(to top, #14181c 20%, transparent 100%),
+        url("portada_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    gap: 20px;
+}
+
+#info .contenedor {
+    padding: 150px 12px;
+}
+
+#info h3 {
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    margin: 20px 30px;
+}
+
+#info h3 span {
+    margin: 0;
+    padding-right: 0px;
+    padding-left: 0px;
+    font-weight: bold;
+    color: var(--color-principal);
+    font-size: 25px;
+}
+
+#info .cuadro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#info .carta p {
+    font-size: 14px;
+    color: var(--color-texto);
+}
+
+.cuadro .carta {
+    margin: 0;
+    padding: 20px 30px;
+    width: 30%;
+    display: flex;
+    text-align: left;
+    border-radius: 5px;
+    background-color: var(--color-oscuro);
+
+}
+
+.carta #par1:hover {
+    background-color: var(--color-secundario);
+}
+
+#info .cuadro .carta #par2:hover {
+    background-color: var(--color-par2);
+}
+
+#info .cuadro .carta #par3:hover {
+    background-color: var(--color-par3);
+}
+
+#reviews .contenedor {
+    padding: 150px 12px;
+}
+
+#portada button {
+    margin-top: 55px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 25px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: var(--color-texto);
+    background-color: var(--color-secundario);
+}
+
+#portada button:hover {
+    cursor: pointer;
+    background-color: var(--color-principal);
+}
+
+footer {
+    background-color: var(--color-oscuro);
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: var(--color-principal);
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer .container {
+    justify-content: flex-end;
+}
+
 :root {
     /* Colores */
     --color-principal: #EC136D;
     --color-secundario: #6D0932;
+    --color-oscuro: #3F1620;
+    --color-par2: #EC2513;
+    --color-par3: #EC13DA;
     --color-fondo: #14181c;
     --color-texto: #e5e9f2;
 
