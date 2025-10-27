@@ -96,7 +96,7 @@ header a:hover {
     height: 100vh;
     background-image:
         linear-gradient(to top, #14181c 20%, transparent 100%),
-        url("./images/portada_image.jpg");
+        url("../images/portada_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -221,7 +221,7 @@ footer {
     background-color: var(--color-oscuro);
 }
 
-footer .contenedor-redes {
+footer .contenedor {
     height: 80px;
     display: flex;
     justify-content: space-between;
