@@ -16,7 +16,6 @@ body {
     color: var(--color-texto);
 }
 
-
 h1 {
     font-size: 34px;
 }
@@ -36,6 +35,7 @@ p {
 header {
     position: fixed;
     width: 100%;
+    z-index: 1000;
 }
 
 header .logo {
@@ -87,97 +87,89 @@ header a:hover {
     margin: auto;
 }
 
-#portada .contenedor {
+#contacto {
+    min-height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: end;
+    align-items: center;
+    padding: 80px 20px 20px;
+}
+
+#contacto .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: auto;
+    padding: 0;
+}
+
+#contacto form {
+    display: flex;
     flex-direction: column;
-    height: 100vh;
-    background-image:
-        linear-gradient(to top, #14181c 20%, transparent 100%),
-        url("../img/portada_image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    gap: 20px;
+    border: 1px solid #EC136D;
+    border-radius: 10px;
+    width: 400px;
+    padding: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    background-color: var(--color-oscuro2);
 }
 
-#info .contenedor {
-    padding: 150px 12px;
-}
-
-#info h3 {
-    align-items: center;
-    justify-content: center;
-    text-align: start;
-    margin: 20px 30px;
-}
-
-#info h3 span {
-    margin: 0;
-    padding-right: 0px;
-    padding-left: 0px;
+#contacto form h3 {
+    text-align: center;
     font-weight: bold;
     color: var(--color-principal);
-    font-size: 25px;
+    padding: 0px 10px;
 }
 
-#info .cuadro {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-#info .carta p {
-    font-size: 14px;
-    color: var(--color-texto);
-}
-
-.cuadro .carta {
-    margin: 0;
-    padding: 20px 30px;
-    width: 30%;
-    display: flex;
-    text-align: left;
-    border-radius: 5px;
-    background-color: var(--color-oscuro);
-
-}
-
-.carta #par1:hover {
-    background-color: var(--color-secundario);
-}
-
-#info .cuadro .carta #par2:hover {
-    background-color: var(--color-par2);
-}
-
-#info .cuadro .carta #par3:hover {
-    background-color: var(--color-par3);
-}
-
-#reviews .contenedor {
-    padding: 150px 12px;
-}
-
-#portada button {
-    margin-top: 55px;
-    font-size: 20px;
+#contacto form label {
+    align-self: flex-start;
+    margin: 10px 0 5px;
     font-weight: bold;
-    padding: 8px 25px;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    color: var(--color-texto);
-    background-color: var(--color-secundario);
+    width: 100%;
 }
 
-#portada button:hover {
+#contacto form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: var(--color-oscuro2);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: #EC136D 1px solid;
+    border-radius: 4px;
+    color: var(--color-texto);
+}
+
+#contacto form input:focus {
+    outline: none;
+    border-color: var(--color-principal);
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
+    font-weight: bold;
+}
+
+.buttons button {
     background-color: var(--color-principal);
+    color: var(--color-texto);
+}
+
+.buttons button:hover {
+    background-color: var(--color-oscuro);
 }
 
 footer {
@@ -206,6 +198,7 @@ footer .container {
     --color-principal: #EC136D;
     --color-secundario: #6D0932;
     --color-oscuro: #3F1620;
+    --color-oscuro2: rgba(255, 255, 255, 0.05);
     --color-par2: #EC2513;
     --color-par3: #EC13DA;
     --color-fondo: #14181c;
