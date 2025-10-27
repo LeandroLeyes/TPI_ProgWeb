@@ -113,6 +113,7 @@ footer .container {
     --color-principal: #EC136D;
     --color-secundario: #6D0932;
     --color-oscuro: #3F1620;
+    --color-oscuro2: rgba(255, 255, 255, 0.05);
     --color-par2: #EC2513;
     --color-par3: #EC13DA;
     --color-fondo: #14181c;

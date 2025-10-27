@@ -136,26 +136,28 @@ header a:hover {
     color: var(--color-texto);
 }
 
-.cuadro .carta {
+.cuadro .carta-par1,
+.carta-par2,
+.carta-par3 {
     margin: 0;
     padding: 20px 30px;
     width: 30%;
     display: flex;
     text-align: left;
     border-radius: 5px;
-    background-color: var(--color-oscuro);
+    background-color: var(--color-oscuro2);
 
 }
 
-.carta #par1:hover {
+.carta-par1:hover {
     background-color: var(--color-secundario);
 }
 
-#info .cuadro .carta #par2:hover {
+.carta-par2:hover {
     background-color: var(--color-par2);
 }
 
-#info .cuadro .carta #par3:hover {
+.carta-par3:hover {
     background-color: var(--color-par3);
 }
 
@@ -206,6 +208,7 @@ footer .container {
     --color-principal: #EC136D;
     --color-secundario: #6D0932;
     --color-oscuro: #3F1620;
+    --color-oscuro2: rgba(255, 255, 255, 0.05);
     --color-par2: #EC2513;
     --color-par3: #EC13DA;
     --color-fondo: #14181c;
