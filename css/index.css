@@ -96,7 +96,7 @@ header a:hover {
     height: 100vh;
     background-image:
         linear-gradient(to top, #14181c 20%, transparent 100%),
-        url("../img/portada_image.jpg");
+        url("./images/portada_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -165,6 +165,41 @@ header a:hover {
     padding: 150px 12px;
 }
 
+#reviews .contenedor h3 {
+    margin-bottom: 20px;
+}
+
+.reviews-populares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.reviews-populares .carta-review {
+    margin: 0;
+    padding: 10px 20px;
+    display: flex;
+    text-align: left;
+    border-radius: 5px;
+    background-color: var(--color-oscuro2);
+}
+
+.carta-review .icono-pelicula {
+    margin-right: 10px;
+    width: 20%;
+}
+
+.carta-review .texto-review {
+    width: 80%;
+    gap: 10px;
+}
+
+.texto-review p {
+    padding-top: 10px;
+}
+
 #portada button {
     margin-top: 55px;
     font-size: 20px;
@@ -186,21 +221,21 @@ footer {
     background-color: var(--color-oscuro);
 }
 
+footer .contenedor-redes {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px 30px;
+}
+
 footer p {
-    margin: 0;
-    padding: 12px;
     color: var(--color-principal);
 }
 
-footer .container {
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-footer .container {
-    justify-content: flex-end;
+footer .redes a {
+    margin-left: 10px;
+    display: inline-block;
 }
 
 :root {
