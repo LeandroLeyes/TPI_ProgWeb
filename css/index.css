@@ -258,6 +258,10 @@ footer .redes a {
         padding: 2px 6px;
     }
 
+    #portada .contenedor {
+        text-align: center;
+    }
+
     #info .cuadro {
         display: flex;
         flex-direction: column;

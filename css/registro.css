@@ -176,21 +176,45 @@ footer {
     background-color: var(--color-oscuro);
 }
 
+footer .contenedor {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px 30px;
+}
+
 footer p {
-    margin: 0;
-    padding: 12px;
     color: var(--color-principal);
 }
 
-footer .container {
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+footer .redes a {
+    margin-left: 10px;
+    display: inline-block;
 }
 
-footer .container {
-    justify-content: flex-end;
+@media (max-width: 720px) {
+
+    header .contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header a {
+        padding: 2px 6px;
+    }
+
+    footer .contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 30px;
+        gap: 15px;
+    }
+
 }
 
 :root {
