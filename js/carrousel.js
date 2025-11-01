@@ -54,10 +54,10 @@ let imagenP3 = document.getElementById('imagen3')
 let i = 0
 
 function mostrarImagenes() {
-    let grupo = imagenesCarrousel1[i]
-    imagenP1.src = grupo.img1
-    imagenP2.src = grupo.img2
-    imagenP3.src = grupo.img3
+    let aux = imagenesCarrousel1[i]
+    imagenP1.src = aux.img1
+    imagenP2.src = aux.img2
+    imagenP3.src = aux.img3
 }
 
 function atras() {
