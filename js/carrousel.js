@@ -1,63 +1,79 @@
-const imagenesCarrousel = [
-    './images/carrousel/avengerseg.jpg',
-    './images/carrousel/avengersiw.img.jpg',
-    './images/carrousel/bastardos.jpg',
-    './images/carrousel/breakingbad.jpg',
-    './images/carrousel/fallout.jpg',
-    './images/carrousel/got.jpg',
-    './images/carrousel/lotr.jpg',
-    './images/carrousel/predator.jpg',
-    './images/carrousel/terminator.jpg'
+
+const imagenesCarrousel1 = [
+    {
+        img1: './images/carrousel/avengerseg.jpg', //0
+        img2: './images/carrousel/avengersiw.img.jpg',//1
+        img3: './images/carrousel/bastardos.jpg'//2
+    },
+    {
+        img1: './images/carrousel/terminator.jpg',//8
+        img2: './images/carrousel/avengerseg.jpg',//0
+        img3: './images/carrousel/avengersiw.img.jpg'//1
+    },
+    {
+        img1: './images/carrousel/predator.jpg',//7
+        img2: './images/carrousel/terminator.jpg',//8
+        img3: './images/carrousel/avengerseg.jpg'//0
+    },
+    {
+        img1: './images/carrousel/lotr.jpg',//6
+        img2: './images/carrousel/predator.jpg',//7
+        img3: './images/carrousel/terminator.jpg'//8
+    },
+    {
+        img1: './images/carrousel/got.jpg',//5
+        img2: './images/carrousel/lotr.jpg',//6
+        img3: './images/carrousel/predator.jpg'//7
+    },
+    {
+        img1: './images/carrousel/fallout.jpg',//4
+        img2: './images/carrousel/got.jpg',//5
+        img3: './images/carrousel/lotr.jpg'//6
+    },
+    {
+        img1: './images/carrousel/breakingbad.jpg',//3
+        img2: './images/carrousel/fallout.jpg',//4
+        img3: './images/carrousel/got.jpg'//5
+    },
+    {
+        img1: './images/carrousel/bastardos.jpg',//2
+        img2: './images/carrousel/breakingbad.jpg',//3
+        img3: './images/carrousel/fallout.jpg'//4
+    },
+    {
+        img1: './images/carrousel/avengersiw.img.jpg',//1
+        img2: './images/carrousel/bastardos.jpg',//2
+        img3: './images/carrousel/breakingbad.jpg'//3
+    }
 ]
 
 let imagenP1 = document.getElementById('imagen1')
 let imagenP2 = document.getElementById('imagen2')
 let imagenP3 = document.getElementById('imagen3')
 
-let botonAdelante = document.getElementById('adelante')
-let botonAtras = document.getElementById('atras')
+let i = 0
 
-iniciarCarrousel()
+function mostrarImagenes() {
+    let grupo = imagenesCarrousel1[i]
+    imagenP1.src = grupo.img1
+    imagenP2.src = grupo.img2
+    imagenP3.src = grupo.img3
+}
 
-let i = 1
-
-function carrousel() {
-
-    if (i < imagenesCarrousel.length - 2) {
-
-        botonAtras.style.display = 'inline-block'
-
-        imagenP1.src = imagenesCarrousel[i]
-        imagenP2.src = imagenesCarrousel[i + 1]
-        imagenP3.src = imagenesCarrousel[i + 2]
-
-        i++
-    } else {
-        botonAdelante.style.display = 'none'
+function atras() {
+    i++
+    if (i >= imagenesCarrousel1.length) {
+        i = 0
     }
-
+    mostrarImagenes()
 }
 
-function carrouselAtras() {
-
-    if (i <= imagenesCarrousel.length && i > 1) {
-
-        botonAdelante.style.display = 'inline-block'
-
-        imagenP1.src = imagenesCarrousel[i - 2]
-        imagenP2.src = imagenesCarrousel[i - 1]
-        imagenP3.src = imagenesCarrousel[i]
-
-        i--
-    } else {
-        botonAtras.style.display = 'none'
+function adelante() {
+    i--
+    if (i < 0) {
+        i = imagenesCarrousel1.length - 1
     }
+    mostrarImagenes()
 }
 
-function iniciarCarrousel() {
-    imagenP1.src = imagenesCarrousel[0]
-    imagenP2.src = imagenesCarrousel[1]
-    imagenP3.src = imagenesCarrousel[2]
-    botonAtras.style.display = 'none'
-}
-
+mostrarImagenes()

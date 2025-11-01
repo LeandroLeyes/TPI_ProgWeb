@@ -30,12 +30,18 @@
                 <h3>Registrate</h3>
                 <label for="">Nombre de usuario* </label>
                 <input name="nombre" type="text" id="nombre">
+                <span id="val-nombre">validacion</span>
                 <label for="email">Email* </label>
                 <input name="email" type="email" id="email">
+                <span id="val-email">validacion</span>
                 <label for="contraseña">Contraseña* </label>
                 <input name="contraseña" type="password" id="contraseña">
+                <span id="val-password">validacion</span>
                 <label for="contraseña2">Repita la contraseña* </label>
                 <input name="contraseña2" type="password" id="contraseña2">
+                <span id="val-password2">validacion</span>
+                <span id="ver-password"><button onclick="verPassword()"><img src="../images/iconos/ojo.png"
+                            alt="ver"></button></span>
                 <div class="buttons">
                     <button type="submit">Registrar</button>
                     <button type="reset">Limpiar</button>
@@ -57,6 +63,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="../js/password.js"></script>
 </body>
 
 </html>

@@ -147,6 +147,20 @@ header a:hover {
     border-color: var(--color-principal);
 }
 
+#contacto form #ver-password {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#contacto form #ver-password button {
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
 .buttons {
     display: flex;
     gap: 10px;
@@ -191,6 +205,14 @@ footer p {
 footer .redes a {
     margin-left: 10px;
     display: inline-block;
+}
+
+/*Validaciones*/
+#val-nombre,
+#val-email,
+#val-password,
+#val-password2 {
+    display: none;
 }
 
 @media (max-width: 720px) {

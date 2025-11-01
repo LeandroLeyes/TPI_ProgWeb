@@ -338,6 +338,18 @@ footer .redes a {
 
     }
 
+    .carta-par1:hover {
+        background-color: var(--color-secundario);
+    }
+
+    .carta-par2:hover {
+        background-color: var(--color-par2);
+    }
+
+    .carta-par3:hover {
+        background-color: var(--color-par3);
+    }
+
     .carta-review .icono-pelicula img {
         height: 150px;
         width: 100px;
