@@ -89,9 +89,10 @@ header a:hover {
 
 #portada .contenedor {
     display: flex;
-    align-items: center;
+    width: auto;
     justify-content: center;
-    text-align: end;
+    align-items: center;
+    text-align: center;
     flex-direction: column;
     height: 100vh;
     background-image:

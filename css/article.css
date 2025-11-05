@@ -18,7 +18,7 @@ body {
 
 
 h1 {
-    font-size: 34px;
+    font-size: 50px;
 }
 
 h2 {
@@ -90,6 +90,43 @@ header a:hover {
 #principal {
     height: 100vh;
 }
+
+#portada .contenedor {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 75vh;
+    background-image:
+        linear-gradient(to top, #14181c 20%, transparent 100%),
+        url("../images/article/article-hero.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    gap: 20px;
+}
+
+     #peliculas .catalogo {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .catalogo .item {
+        margin: 0;
+        padding: 20px 30px;
+        width: auto;
+        display: flex;
+        border-radius: 5px;
+        background-color: var(--color-oscuro2);
+
+    }
+
 
 footer {
     background-color: var(--color-oscuro);
