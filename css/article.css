@@ -108,25 +108,74 @@ header a:hover {
     gap: 20px;
 }
 
-     #peliculas .catalogo {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
+#peliculas .contenedor {
+    padding: 150px 12px;
 
-    .catalogo .item {
-        margin: 0;
-        padding: 20px 30px;
-        width: auto;
-        display: flex;
-        border-radius: 5px;
-        background-color: var(--color-oscuro2);
+}
 
-    }
+#peliculas .catalogo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 
+}
+
+#series .contenedor {
+    padding: 150px 12px;
+
+}
+
+#series .catalogo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+#estrenos .contenedor {
+    padding: 150px 12px;
+
+}
+
+#estrenos .catalogo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.catalogo .item {
+    margin: 0;
+    padding: 10px;
+    width: auto;
+    display: flex;
+    border-radius: 5px;
+    background-color: var(--color-oscuro2);
+    width: fit-content;
+    gap: 20px;
+
+}
+
+.sinopsis {
+    display: none;
+}
+
+.item:hover {
+    background-color: #EC13DA;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
 footer {
     background-color: var(--color-oscuro);
