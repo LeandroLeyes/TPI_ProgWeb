@@ -97,7 +97,7 @@ header a:hover {
     height: 100vh;
     background-image:
         linear-gradient(to top, #14181c 20%, transparent 100%),
-        url("../images/portada_image.jpg");
+        url("../images/index/portada_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

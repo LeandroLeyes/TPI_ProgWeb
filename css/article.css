@@ -82,15 +82,6 @@ header a:hover {
     color: var(--color-principal);
 }
 
-.contenedor {
-    max-width: 1400px;
-    margin: auto;
-}
-
-#principal {
-    height: 100vh;
-}
-
 #portada .contenedor {
     display: flex;
     width: auto;
@@ -98,7 +89,7 @@ header a:hover {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    height: 75vh;
+    height: 80vh;
     background-image:
         linear-gradient(to top, #14181c 20%, transparent 100%),
         url("../images/article/article-hero.webp");
@@ -106,6 +97,44 @@ header a:hover {
     background-size: cover;
     background-position: center;
     gap: 20px;
+}
+
+.contenedor {
+    max-width: 1400px;
+    margin: auto;
+}
+
+#carrusel-videos .contenedor {
+    padding: 10px 12px;
+}
+
+.videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.videos #video {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.videos .botones {
+    display: flex;
+    margin: 0;
+}
+
+.videos .botones button {
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
 }
 
 #peliculas .contenedor {
