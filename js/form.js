@@ -28,7 +28,7 @@ function validacion() {
     } else if (!regexUser.test(nombre.value)) {
 
         nombre.style.border = '2px solid red';
-        spanNombre.textContent = 'Usuario invalido!';
+        spanNombre.textContent = 'Usuario invalido! Solo se permiten letras, espacios y guiones';
         validado = false;
 
     } else {
@@ -47,7 +47,7 @@ function validacion() {
     } else if (!regexEmail.test(email.value)) {
 
         email.style.border = '2px solid red';
-        spanEmail.textContent = 'Email invalido!';
+        spanEmail.textContent = 'Email invalido! Verifique';
         validado = false;
 
     } else {
@@ -60,7 +60,7 @@ function validacion() {
     if (!regexcontraseña.test(contraseña.value)) {
 
         contraseña.style.border = '2px solid red';
-        spanContraseña.textContent = 'Contraseña invalida!';
+        spanContraseña.textContent = 'Contraseña invalida! Debe contener almenos 8 caracteres';
         validado = false;
 
     } else {
@@ -73,7 +73,7 @@ function validacion() {
     if (!regexcontraseña.test(contraseña2.value)) {
 
         contraseña2.style.border = '2px solid red';
-        spanContraseña2.textContent = 'Contraseña invalida!';
+        spanContraseña2.textContent = 'Contraseña invalida! Debe contener almenos 8 caracteres';
         validado = false;
 
     } else if (!(contraseña.value === contraseña2.value)) {
