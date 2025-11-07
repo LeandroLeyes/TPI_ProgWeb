@@ -73,6 +73,7 @@ function validacion() {
     if (!regexcontraseña.test(contraseña2.value)) {
 
         contraseña2.style.border = '2px solid red';
+        spanContraseña2.textContent = 'Contraseña invalida!';
         validado = false;
 
     } else if (!(contraseña.value === contraseña2.value)) {
@@ -105,7 +106,7 @@ function imprimirCarta() {
     let contenido = document.createElement('p')
 
     titulo.textContent = 'Bienvenido!';
-    contenido.textContent = 'Usuario ' + nombre + ', con email ' + email + ', registrado con exito!'
+    contenido.textContent = 'Usuario ' + nombre.value + ', con email ' + email.value + ', registrado con exito!'
 
     carta.appendChild(titulo);
     carta.appendChild(contenido);
