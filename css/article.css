@@ -246,6 +246,29 @@ footer .redes a {
         padding: 2px 6px;
     }
 
+    #portada .contenedor {
+        text-align: center;
+    }
+
+    .videos {
+        gap: 5px;
+    }
+
+    .videos #video {
+        height: auto;
+        width: 300px;
+    }
+
+    .videos .botones button img {
+        height: auto;
+        width: 30px;
+    }
+
+    .item img {
+        width: 100px;
+        height: 180px;
+    }
+
     footer .contenedor {
         display: flex;
         flex-direction: column;
