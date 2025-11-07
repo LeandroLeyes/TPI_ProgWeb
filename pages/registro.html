@@ -26,21 +26,22 @@
 
     <section id="contacto">
         <div class="contenedor">
-            <form action="" novalidate onsubmit="return false">
+            <form action="" id="formulario" novalidate onsubmit="return validacion()">
                 <h3>Registrate</h3>
+                
                 <label for="">Nombre de usuario* </label>
                 <input name="nombre" type="text" id="nombre">
-                <span id="val-nombre">validacion</span>
+                <span id="val-nombre" class="validaciones">validacion</span>
                 <label for="email">Email* </label>
                 <input name="email" type="email" id="email">
-                <span id="val-email">validacion</span>
+                <span id="val-email" class="validaciones">validacion</span>
                 <label for="contraseña">Contraseña* </label>
                 <input name="contraseña" type="password" id="contraseña">
-                <span id="val-password">validacion</span>
+                <span id="val-contraseña" class="validaciones">validacion</span>
                 <label for="contraseña2">Repita la contraseña* </label>
                 <input name="contraseña2" type="password" id="contraseña2">
-                <span id="val-password2">validacion</span>
-                <span id="ver-password"><button onclick="verPassword()"><img src="../images/iconos/ojo.png"
+                <span id="val-contraseña2" class="validaciones">validacion</span>
+                <span id="ver-password" class="validaciones"><button onclick="verPassword()"><img src="../images/iconos/ojo.png"
                             alt="ver"></button></span>
                 <div class="buttons">
                     <button type="submit">Registrar</button>
@@ -65,6 +66,7 @@
     </footer>
 
     <script src="../js/password.js"></script>
+    <script>src="../js/form.js"</script>
 </body>
 
 </html>
