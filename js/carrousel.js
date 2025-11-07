@@ -1,14 +1,14 @@
 
 const imagenesCarrousel = [
-    './images/carrousel/avengerseg.jpg',//0
-    './images/carrousel/avengersiw.img.jpg',//1
-    './images/carrousel/bastardos.jpg',//2
-    './images/carrousel/breakingbad.jpg',//3
-    './images/carrousel/fallout.jpg',//4
-    './images/carrousel/got.jpg',//5
-    './images/carrousel/lotr.jpg',//6
-    './images/carrousel/predator.jpg',//7
-    './images/carrousel/terminator.jpg'//8
+    './images/index/carrousel/avengerseg.jpg',//0
+    './images/index/carrousel/avengersiw.img.jpg',//1
+    './images/index/carrousel/bastardos.jpg',//2
+    './images/index/carrousel/breakingbad.jpg',//3
+    './images/index/carrousel/fallout.jpg',//4
+    './images/index/carrousel/got.jpg',//5
+    './images/index/carrousel/lotr.jpg',//6
+    './images/index/carrousel/predator.jpg',//7
+    './images/index/carrousel/terminator.jpg'//8
 ]
 
 let imagenP1 = document.getElementById('imagen1')

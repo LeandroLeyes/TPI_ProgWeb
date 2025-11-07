@@ -18,6 +18,8 @@ body {
 
 
 h1 {
+    margin-left: 40px;
+    margin-bottom: 30px;
     font-size: 50px;
 }
 
@@ -92,7 +94,7 @@ header a:hover {
     height: 80vh;
     background-image:
         linear-gradient(to top, #14181c 20%, transparent 100%),
-        url("../images/article/article-hero.webp");
+        url("../images/article/BannerKillBill.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -182,6 +184,11 @@ header a:hover {
 
 }
 
+.item img {
+    width: 300px;
+    height: 600px;
+}
+
 .catalogo .item {
     margin: 0;
     padding: 10px;
@@ -191,7 +198,6 @@ header a:hover {
     background-color: var(--color-oscuro2);
     width: fit-content;
     gap: 20px;
-
 }
 
 .sinopsis {

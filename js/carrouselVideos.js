@@ -1,7 +1,7 @@
 const videos = [
-    '../images/trailers/trailerAvatar.mp4',//0
-    '../images/trailers/trailerFallout.mp4',//1
-    '../images/trailers/trailerStrangerThings.mp4'//2
+    '../images/article/trailers/trailerAvatar.mp4',//0
+    '../images/article/trailers/trailerFallout.mp4',//1
+    '../images/article/trailers/trailerStrangerThings.mp4'//2
 ];
 
 const video = document.getElementById('video');
