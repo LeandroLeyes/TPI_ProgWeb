@@ -80,6 +80,10 @@ header a {
     color: var(--color-texto);
 }
 
+header .logo:hover {
+    transform: scale(1.05);
+}
+
 header a:hover {
     color: var(--color-principal);
 }
@@ -205,6 +209,8 @@ header a:hover {
 }
 
 .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px #EC13DA;
     background-color: #EC13DA;
     display: flex;
     text-align: center;
