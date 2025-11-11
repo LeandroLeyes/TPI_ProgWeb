@@ -2,12 +2,14 @@ const forms = document.getElementById('formulario');
 
 const spanNombre = document.getElementById('val-nombre');
 const spanEmail = document.getElementById('val-email');
+const spanTelefono = document.getElementById('val-telefono');
 const spanContraseña = document.getElementById('val-contraseña');
 const spanContraseña2 = document.getElementById('val-contraseña2');
 
 
 const nombre = forms['nombre'];
 const email = forms['email'];
+const telefono = forms['telefono'];
 const contraseña = forms['contraseña'];
 const contraseña2 = forms['contraseña2'];
 
@@ -15,6 +17,7 @@ function validacion() {
 
     const regexUser = /^[A-Za-z\s_\_\-]+$/;
     const regexEmail = /^\w+@\w+\.(com)(|\.(ar))+$/;
+    const regexTelefono = /^\+?[0-9\s\-()]{10,17}$/;
     const regexcontraseña = /^[A-Za-z0-9]{8,}$/;
 
     let validado = true;
@@ -56,6 +59,27 @@ function validacion() {
         spanEmail.textContent = '';
 
     }
+
+
+    if (telefono.value === '') {
+
+        telefono.style.border = '2px solid red';
+        spanTelefono.textContent = 'El campo no debe estar vacio!';
+        validado = false;
+
+    } else if (!regexTelefono.test(telefono.value)) {
+
+        telefono.style.border = '2px solid red';
+        spanTelefono.textContent = 'Telefono invalido! Debe tener entre 10 y 17 caracteres';
+        validado = false;
+
+    } else {
+
+        telefono.style.border = '2px solid green';
+        spanTelefono.textContent = '';
+
+    }
+
 
     if (!regexcontraseña.test(contraseña.value)) {
 
@@ -102,13 +126,17 @@ function validacion() {
 function imprimirCarta() {
     const carta = document.createElement('div')
 
-    let titulo = document.createElement('h2');
-    let contenido = document.createElement('p')
+    let titulo = document.createElement('h3');
+    let contenido = document.createElement('span');
+    let usuario = document.createElement('span');
 
     titulo.textContent = 'Bienvenido!';
-    contenido.textContent = 'Usuario ' + nombre.value + ', con email ' + email.value + ', registrado con exito!'
+
+    usuario.textContent = 'Usuario ' + nombre.value + ', con email ' + email.value;
+    contenido.textContent = 'Nos comunicaremos al ' + telefono.value + ' a la brevedad.'
 
     carta.appendChild(titulo);
+    carta.appendChild(usuario);
     carta.appendChild(contenido);
 
     carta.className = 'carta';

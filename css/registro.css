@@ -231,13 +231,13 @@ footer .redes a {
     justify-content: center;
     text-align: center;
     color: var(--color-texto);
-    width: 400px;
+    width: 500px;
     background-color: var(--color-secundario);
     border-radius: 10px;
     border: 1px solid #e5e9f2;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-    gap: 20px;
+    gap: 10px;
 }
 
 @media (max-width: 720px) {
